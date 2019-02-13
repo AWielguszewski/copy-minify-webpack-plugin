@@ -3,7 +3,7 @@ const exec = util.promisify(require("child_process").exec);
 const imagemin = require("imagemin");
 const imageminJpegtran = require("imagemin-jpegtran");
 
-class HandleAssetsPlugin {
+class CopyMinifyPlugin {
   constructor(copy = null, minify = null) {
     this.copy = copy;
     this.minify = minify;
@@ -36,7 +36,7 @@ class HandleAssetsPlugin {
   }
   apply(compiler) {
     compiler.hooks.emit.tapAsync(
-      "HandleAssetsPlugin",
+      "CopyMinifyPlugin",
       async (compilation, callback) => {
         this.pushError = error => compilation.errors.push(error);
         if (!this.copy && !this.minify) {
@@ -77,4 +77,4 @@ class HandleAssetsPlugin {
   }
 }
 
-module.exports = HandleAssetsPlugin;
+module.exports = CopyMinifyPlugin;
