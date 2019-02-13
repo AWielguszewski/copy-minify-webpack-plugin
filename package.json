@@ -1,0 +1,30 @@
+{
+  "name": "copy-minify-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Copy and minify assets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "imagemin": "^6.1.0",
+    "imagemin-jpegtran": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AWielguszewski/copy-minify-webpack-plugin.git"
+  },
+  "keywords": [
+    "copy",
+    "assets",
+    "minify",
+    "webpack",
+    "plugin"
+  ],
+  "author": "AWielguszewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AWielguszewski/copy-minify-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/AWielguszewski/copy-minify-webpack-plugin#readme"
+}
